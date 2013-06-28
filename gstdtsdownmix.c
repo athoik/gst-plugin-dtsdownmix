@@ -519,7 +519,7 @@ static GstStateChangeReturn gst_dtsdownmix_change_state(GstElement * element, Gs
 
 static gboolean plugin_init (GstPlugin * plugin)
 {
-	if (!gst_element_register (plugin, "dtsdownmix", GST_RANK_PRIMARY,
+	if (!gst_element_register (plugin, "dtsdownmix", GST_RANK_PRIMARY + 2,
 					GST_TYPE_DTSDOWNMIX))
 		return FALSE;
 
